@@ -15,7 +15,7 @@ public class Consumer implements Runnable {
         StringBuilder result = new StringBuilder();
 
         final String[] fieldNames = "field1,field2,field3".split(",");
-        //System.out.println(Thread.currentThread().getName() + ": " + line);
+        System.out.println(Thread.currentThread().getName() + ": " + line);
         String[] lineFields = line.split(",");
         result.append("{");
         for (int i=0; i<fieldNames.length; i++) {
